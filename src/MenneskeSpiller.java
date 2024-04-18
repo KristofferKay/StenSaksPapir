@@ -10,7 +10,7 @@ public class MenneskeSpiller extends Spiller{
     public Hånd handSign() {
         Scanner scanner = new Scanner(System.in);
 
-       String input = scanner.next();
+        String input = scanner.next();
         System.out.println("Du har valgt " + input);
 
         switch (input){

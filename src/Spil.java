@@ -15,17 +15,20 @@ public class Spil {
         int rounds = 0;
 
         System.out.println("Velkommen til Sten Saks Papir");
+
+
         while (rounds <= 4 || spiller1.getPoint() == 5 || spiller2.getPoint() == 5) {
             rounds++;
             System.out.println("Runde: " + rounds);
-            System.out.println("Skriv en af følgende: Sten, Saks eller Papir");
-            spiller1.handSign();
 
-            spiller2.handSign();
+            System.out.println("Skriv en af følgende: Sten, Saks eller Papir");
+            Hånd player1Choice = spiller1.handSign();
+
+
+
+            Hånd player2Choice = spiller2.handSign();
             System.out.println("Spiller 2 har valgt " + spiller2.handSign());
 
-            Hånd player1Choice = spiller1.handSign();
-            Hånd player2Choice = spiller2.handSign();
 
             if (player1Choice.equals(player2Choice)) {
                 System.out.println("Uafgjort, no points added");
