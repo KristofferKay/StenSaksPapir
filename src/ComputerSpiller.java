@@ -10,7 +10,7 @@ public class ComputerSpiller extends Spiller {
     @Override
     public Hånd handSign() {
         Random random = new Random();
-        int choice = random.nextInt(3);
+        int choice = random.nextInt(4);
         switch (choice){
             case 1:
                 return Hånd.STEN;
